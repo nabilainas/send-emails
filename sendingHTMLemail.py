@@ -23,7 +23,7 @@ message["From"] = sender
 message["Subject"] = reciever
 
 with open("files/plain_text_part.txt") as plain_text_part:
-    text = plain_text_part
+    text = plain_text_part.read()
 
 with open("files/html_part.txt") as html_part:
     html = html_part.read()
